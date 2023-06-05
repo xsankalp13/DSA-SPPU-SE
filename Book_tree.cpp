@@ -57,8 +57,8 @@ void Gll::insertChapter(){
                 head->down=t1;
                 head->flag = 1;
             }else{
-                temp = head;
-                temp = temp->down;
+                temp = head->down;
+                // temp = temp->down;
                 while(temp->next !=NULL)
                     temp = temp->next;
                 temp->next = t1;
